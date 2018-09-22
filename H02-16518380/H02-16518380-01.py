@@ -2,6 +2,8 @@
 # Tanggal   : 22 September 2018
 # Deskripsi : Mencari FPB dari n buah bilangan
 
+#PROGRAM FPB
+
 #KAMUS
 # n,minimum,FPB  :int
 # habis          :bool

@@ -2,6 +2,8 @@
 # Tanggal   : 22 September 2018
 # Deskripsi : Menentukan hasil perkalian polinom
 
+#PROGRAM POLINOM
+
 #KAMUS
 # derajatF,derajatG  :int
 # F,G,FxG            : array of int

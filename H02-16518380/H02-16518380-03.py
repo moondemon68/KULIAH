@@ -2,6 +2,8 @@
 # Tanggal   : 22 September 2018
 # Deskripsi : Menentukan banyaknya segitiga yang bisa dibentuk
 
+#PROGRAM SEGITIGA
+
 #KAMUS
 # stikYon,stikRin,stikMi    :int
 # Yon,Rin,Mi                : array of int
