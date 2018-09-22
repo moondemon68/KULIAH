@@ -15,6 +15,7 @@ for i in range (n):
     fakultas[i]=int(input("Jumlah mahasiswa dari fakultas "+str(i+1)+": "))
     if (fakultas[i]<minimum):
         minimum=fakultas[i];
+
 FPB=0
 for i in range (1,minimum+1):
     habis=True
@@ -23,4 +24,5 @@ for i in range (1,minimum+1):
             habis=False
     if (habis):
         FPB=i
+
 print("Jumlah anggota tim terbanyak yang mungkin adalah "+str(FPB))

@@ -11,17 +11,17 @@ derajatF=int(input("Masukkan derajat f: "))
 F=[0 for i in range(derajatF+1)]
 for i in range(derajatF,-1,-1):
     F[i]=int(input("Masukkan koefisien x^"+str(i)+": "))
-#print(F)
+
 derajatG=int(input("Masukkan derajat g: "))
 G=[0 for i in range(derajatG+1)]
 for i in range(derajatG,-1,-1):
     G[i]=int(input("Masukkan koefisien x^"+str(i)+": "))
-#print(G)
+
 FxG=[0 for i in range(derajatF+derajatG+1)]
 for i in range(derajatF+1):
     for j in range(derajatG+1):
         FxG[i+j]+=F[i]*G[j];
-#print(FxG)
+
 print("Hasil perkalian polinom: ")
 if (FxG[derajatF+derajatG]<0):
     print("- ",end="")
