@@ -8,10 +8,10 @@ def prima(a):
     # KAMUS LOKAL
     # cnt,a: integer
     # ALGORITMA
-    cnt=0    #variabel untuk menghitung jumlah faktor dari a
+    cnt=0               #variabel untuk menghitung jumlah faktor dari a
     for i in range(1,a+1):
         if (a%i==0):
-            cnt+=1; #variabel cnt ditambah bila a habis membagi i
+            cnt+=1;     #variabel cnt ditambah bila a habis membagi i
     if (cnt==2):
         return True     #bilangan yang memiliki faktor sama dengan 2 adalah bilangan prima
     else:
@@ -32,6 +32,6 @@ a=int(input("Masukkan A: "))    #input angka A
 b=int(input("Masukkan B: "))    #input angka B
 print("Pasangan bilangan PrimaPrima:")
 for i in range(a,b+1):
-    for j in range(a,b+1):      #bilangan kedua harus lebih besar dari bilangan pertama
+    for j in range(a,b+1):                 #bilangan kedua harus lebih besar dari bilangan pertama
         if (cek(i,j)):
             print(str(i)+" "+str(j))       #mengoutputkan pasangan bilangan PrimaPrima
