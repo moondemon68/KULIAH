@@ -19,10 +19,12 @@ print(len(df))
 
 no2=df.loc[df["nama"]=="Tuan Yon"]	
 #membuat dataframe baru (bernama no2) yang berisi data dimana kolom nama berisi "Tuan Yon"
-print(len(no2))	
-#mengoutputkan banyaknya data pada dataframe no2 tersebut
+print(no2)	
+#mengoutputkan dataframe no2
 
-#1
+#          nama tipe_barang  bulan  tahun  qty  profit
+#4390  Tuan Yon  elektronik      4   2017    7  199999
+
 
 #SOAL 3
 #Banyaknya transaksi dengan profit di atas 150.000
