@@ -10,6 +10,7 @@ def upordown(row):
         return "SAME"
 
 df=pd.read_csv("crypto-filtered.csv")
-df1=df.loc[:,["symbol","date","open","close","volume","spread"]]
+df1=df.loc[:,["symbol","date","open","close","volume","high","low","spread"]]
 df1["up/down"]=df1.apply(upordown,axis=1)
+print(df1)
 df1.to_csv("processed-data.csv")
