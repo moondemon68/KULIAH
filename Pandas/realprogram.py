@@ -22,30 +22,6 @@ plt.ylabel("Harga")
 plt.xticks([w*365 for w in range(3)],[2016+w for w in range(3)])
 plt.show()
 
-#Chart XRP
-xrp=df.loc[df["symbol"]=="XRP"];
-xrp.plot(kind="line",y="close",title="Close Price XRP 2016 - 2018")
-plt.xlabel("Tahun")
-plt.ylabel("Harga")
-plt.xticks([w*365 for w in range(3)],[2016+w for w in range(3)])
-plt.show()
-
-#Chart XLM
-xlm=df.loc[df["symbol"]=="XLM"];
-xlm.plot(kind="line",y="close",title="Close Price XLM 2016 - 2018")
-plt.xlabel("Tahun")
-plt.ylabel("Harga")
-plt.xticks([w*365 for w in range(3)],[2016+w for w in range(3)])
-plt.show()
-
-#Chart LTC
-ltc=df.loc[df["symbol"]=="LTC"];
-ltc.plot(kind="line",y="close",title="Close Price LTC 2016 - 2018")
-plt.xlabel("Tahun")
-plt.ylabel("Harga")
-plt.xticks([w*365 for w in range(3)],[2016+w for w in range(3)])
-plt.show()
-
 #Chart Semua Crypto
 df.groupby("symbol")["close"].plot(kind="line",stacked=False,logy=False,legend=True,title="Crypto Close Price 2016-2018")
 plt.xlabel("Tahun")
@@ -62,7 +38,7 @@ plt.xticks([w*365 for w in range(3)],[2016+w for w in range(3)])
 plt.legend(bbox_to_anchor=[1,0.65],loc="center")
 plt.show()
 
-#Naik Turunnya Harga Crypto Per Hari
+#Stacked Bar Chart Naik Turunnya Harga Crypto Per Hari
 df.groupby(["symbol","up/down"]).size().unstack().plot(kind="bar",stacked=True,title="Naik Turunnya Harga Crypto Per Hari")
 plt.xlabel("Mata Uang")
 plt.ylabel("Banyaknya Hari")
